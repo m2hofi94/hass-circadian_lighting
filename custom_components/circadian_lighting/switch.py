@@ -330,7 +330,13 @@ class CircadianSwitch(SwitchDevice, RestoreEntity):
     def light_state_changed(self, entity_id, from_state, to_state):
         try:
             _LOGGER.debug(entity_id + " change from " + str(from_state) + " to " + str(to_state))
-            if to_state.state == 'on' and from_state.state != 'on':
+            if (from_state is not None and to_state is not None and
+                from_state.state == to_state.state == STATE_ON and
+                to_state.attributes['color_temp'] != color_temperature_kelvin_to_mired(self._cl.data['colortemp'])
+            ):
+                self.hass.services.call(SWITCH_DOMAIN, SERVICE_TURN_OFF, {ATTR_ENTITY_ID: self.entity_id})
+                _LOGGER.debug(self.entity_id + " turned off due to colortemp override by user")
+            elif to_state.state == 'on' and from_state.state != 'on':
                 self.adjust_lights([entity_id], DEFAULT_INITIAL_TRANSITION)
         except:
             pass
