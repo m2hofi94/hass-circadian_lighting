@@ -1,16 +1,16 @@
 {
     "circadian_lighting": {
-        "updated_at": "2019-08-17",
-        "version": "1.0.9",
+        "updated_at": "2020-01-22",
+        "version": "1.0.10",
         "local_location": "/custom_components/circadian_lighting/__init__.py",
-        "remote_location": "https://raw.githubusercontent.com/claytonjn/hass-circadian_lighting/master/custom_components/circadian_lighting/__init__.py",
-        "visit_repo": "https://github.com/claytonjn/hass-circadian_lighting",
-        "changelog": "https://github.com/claytonjn/hass-circadian_lighting/releases",
+        "remote_location": "https://raw.githubusercontent.com/m2hofi94/hass-circadian_lighting/master/custom_components/circadian_lighting/__init__.py",
+        "visit_repo": "https://github.com/m2hofi94/hass-circadian_lighting",
+        "changelog": "https://github.com/m2hofi94/hass-circadian_lighting/releases",
         "resources": [
-            "https://raw.githubusercontent.com/claytonjn/hass-circadian_lighting/master/custom_components/circadian_lighting/manifest.json",
-            "https://raw.githubusercontent.com/claytonjn/hass-circadian_lighting/master/custom_components/circadian_lighting/sensor.py",
-            "https://raw.githubusercontent.com/claytonjn/hass-circadian_lighting/master/custom_components/circadian_lighting/services.yaml",
-            "https://raw.githubusercontent.com/claytonjn/hass-circadian_lighting/master/custom_components/circadian_lighting/switch.py"
+            "https://raw.githubusercontent.com/m2hofi94/hass-circadian_lighting/master/custom_components/circadian_lighting/manifest.json",
+            "https://raw.githubusercontent.com/m2hofi94/hass-circadian_lighting/master/custom_components/circadian_lighting/sensor.py",
+            "https://raw.githubusercontent.com/m2hofi94/hass-circadian_lighting/master/custom_components/circadian_lighting/services.yaml",
+            "https://raw.githubusercontent.com/m2hofi94/hass-circadian_lighting/master/custom_components/circadian_lighting/switch.py"
         ]
     }
 }
